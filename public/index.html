@@ -47,7 +47,10 @@
 
     <script>
       // La direccion debemos cambiar si subimos a un server
-      const socket = io("http://localhost:8080");
+      // const socket = io("http://localhost:8080");
+
+      // Para produccion cambiamos
+      const socket = io("https://wwebmaick-socket-server.herokuapp.com/");
 
       // referencias a los elementos DOM
       const formulario = document.querySelector("#miFormulario");
